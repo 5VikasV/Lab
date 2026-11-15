@@ -1,0 +1,35 @@
+.\venv\Scripts\Activate.ps1
+
+python app.py
+
+Postman — GET
+
+Method: GET
+
+URL: http://127.0.0.1:5000/students
+
+Body: None
+
+Result: 200 OK — Retrieves students
+
+Postman — POST
+
+Method: POST
+
+URL: http://127.0.0.1:5000/students
+
+Body → raw → JSON
+
+{"name":"Arjun","age":22,"course":"Electronics"}
+
+Result: 201 Created — Adds student
+
+Postman — GET Again
+
+Method: GET
+
+Same URL → Send
+
+Result: 200 OK — Shows 3 students
+
+Stop Flask: Ctrl + C
